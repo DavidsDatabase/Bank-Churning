@@ -6,13 +6,13 @@ This project focuses on customers with different backgrounds and circumstances t
 
 ### About the Data
 
-The primary dataset can be found on <https://www.kaggle.com/datasets/shubhammeshram579/bank-customer-churn-prediction/data/>. The provided excel file is labeled Sales Transaction v.4a.xlsx
+The primary dataset can be found on <https://www.kaggle.com/datasets/shubhammeshram579/bank-customer-churn-prediction/data/>. The provided excel file is labeled Churn_Modelling_Copy.csv
 
 ### Tools Used
 
 - Excel - Data Cleaning
-- SQL - Data Cleaning & Data Analysis
-- Tableau - Data Visualization
+- Excel - EDA
+- Excel - Data Visualization
 
 ### Data Cleaning/Preparation
 
@@ -24,41 +24,27 @@ The primary dataset can be found on <https://www.kaggle.com/datasets/shubhammesh
 
 EDA was performed to answer key questions, such as, but not limited to:
 
-1. How was the sales trend over the months?
-2. Which products had the most sales?
-3. How many products does the customer purchase in each transaction?
-4. What are the most profitable segment customers?
+1. Which credit scores were most commonly associated with customers who exited the bank?
+2. Is there any connection between product ownership and customer churn?
+3. Does a customer's age impact their tendency to exit the bank?
+4. Is there a relationship between customer tenure and their likelihood of exiting the bank?
 
 ### Results/Findings
 
-1. We see that the early months of the year had constant sales from 12/2018 to 08/2019. Afterwards, we start to see an upwards trend in the amount of sales from 09/2019 to 11/2019. Between 08/2019 and 09/2019, there was an **increase** of **42%** in sales.
-
-![image](https://github.com/user-attachments/assets/f5d321ca-9579-44b4-af40-bf929a41142e)
-
-2. Popcorn holder, world war 2 gliders, and paper crafts little birdies were amongst the top products being sold to consumers. These 3 products had over **500,000 pounds** in sales.  
-
-![image](https://github.com/user-attachments/assets/ef795b42-2ec1-4e31-88bf-73464110084a)
-
-3. Customer **14585** had purchased **1,111** products, followed by customer **16219** with **747** products, and customer **15492** with **730** products. Many customers amongst the list had made other orders, but these orders represents the highest amount of products purchased in 1 transaction. 
-
-![image](https://github.com/user-attachments/assets/391f239e-e5b0-4e92-9975-564a6d9060bc)
-
-4. We see customer **14646** as the most profitable segment customer with **2.1million pounds** in sales alone. The following customers purchased half of customer 14646 between 800,000 and 1 million pounds in sales. 
-
-![image](https://github.com/user-attachments/assets/e48106a3-9b4d-4c64-b5dc-5893b48c290f)
+1. We found that customers with "Fair" credit scores tend to exit the bank the most compared to other credit scores. This is also true for both genders.
+2. Customers with only 1 product from the bank tend to exit the most compared to multiple product users. Another note, we found that users with 4 products have all exited the bank.
+3. "Old" customers whose over the age of 55 had the highest percentage in exiting the bank. 36.75% of "old" users have churned, which is a little more than 1/3 of users.
+4. We found users that had been with the bank for years 1 through 5 were most likely to churn compared to newly acquired users and users who had stayed past 5 years.
 
 
 ### Recommendations
 
 Based on the analysis, we recommend the following actions:
 
-The business should focus primarily on supplying stock for the top 10 best performing products, in terms of sales. These products would be sold quickly to customers without a worry. Focusing on the top 10 customers would yield the most sales as these customers had the highest sales throughout the year. 
-
+We recommend trying to retain the customers as soon as they are acquired. The rate of churning appears to happen after year 1, so any time before that is crucial. We may also recommend to target customers with higher than "Fair" credit scores as the higher the credit score, the less likely the customers are to churn. Afterwards, we may suggest to promote other business products to the customers to have them stay with the business as most customers tend to churn with only 1 product.
 
 ### Limitations
 
-This dataset did not provide profit margins or product costs. This is important in determining which products actually yielded profit or loss. This also ties to which customers had the best profit return rate. Another limitation that would greatly improve the analysis would be to categorize the products into sub-categories. This can help in determining which categories do better in terms of profit. December 2019 sales were removed from this dataset because the dataset only had 10 days worth of data which would lead to a misleading analysis. 
+This provided dataset was limited to a certain extent. More context and information may be needed to fully depict the accuracy of customer churn. Maybe conduct a survey for these individual customers to gauge their satisfaction levels with the business. This may help determine if the customer is likely to churn or not. 
 
-### Complimentary Visualization
 
-https://public.tableau.com/app/profile/david.lee7724/viz/E-Commerce_Sales_17394108448470/Dashboard1?publish=yes
